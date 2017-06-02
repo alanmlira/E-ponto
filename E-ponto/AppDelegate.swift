@@ -21,7 +21,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
 
-        
         configureFirebase()
         configureIQKeyboardManager()
         
@@ -102,7 +101,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 extension AppDelegate {
     func configureFirebase() -> Void {
-        FIRApp.configure()
+        FirebaseApp.configure()
     }
     
     func configureIQKeyboardManager() -> Void {

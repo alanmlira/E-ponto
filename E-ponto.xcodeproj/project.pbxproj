@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4BB794C944E54A6315B38863 /* Pods_E_ponto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A9368E311FB4460BB8E24FA /* Pods_E_ponto.framework */; };
 		5C14DDDC1EE1028300699815 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C14DDDB1EE1028300699815 /* MainViewController.swift */; };
 		5CD124A11EDF9D7A00A54628 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD124A01EDF9D7A00A54628 /* AppDelegate.swift */; };
 		5CD124A61EDF9D7A00A54628 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CD124A41EDF9D7A00A54628 /* Main.storyboard */; };
@@ -22,19 +21,18 @@
 		5CD7D2591EE0F8D5008BF6DF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD7D2501EE0F8D5008BF6DF /* LoginViewController.swift */; };
 		5CD7D25A1EE0F8D5008BF6DF /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD7D2521EE0F8D5008BF6DF /* BaseViewModel.swift */; };
 		5CD7D25B1EE0F8D5008BF6DF /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD7D2531EE0F8D5008BF6DF /* LoginViewModel.swift */; };
+		BB1E18BC1EE15C0200CC766B /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1E18BB1EE15C0200CC766B /* ActivityIndicator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		10AD806B5BBB0E62053FB5D7 /* Pods-E-ponto.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-E-ponto.release.xcconfig"; path = "Pods/Target Support Files/Pods-E-ponto/Pods-E-ponto.release.xcconfig"; sourceTree = "<group>"; };
-		1A9368E311FB4460BB8E24FA /* Pods_E_ponto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_E_ponto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C14DDDB1EE1028300699815 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		5CD1249D1EDF9D7A00A54628 /* E-ponto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "E-ponto.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CD124A01EDF9D7A00A54628 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5CD124A51EDF9D7A00A54628 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5CD124A81EDF9D7A00A54628 /* E_ponto.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = E_ponto.xcdatamodel; sourceTree = "<group>"; };
-		5CD124AA1EDF9D7A00A54628 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5CD124AA1EDF9D7A00A54628 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
 		5CD124AD1EDF9D7A00A54628 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		5CD124AF1EDF9D7A00A54628 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5CD124AF1EDF9D7A00A54628 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
 		5CD7D2481EE0F8D5008BF6DF /* Error.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
 		5CD7D2491EE0F8D5008BF6DF /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		5CD7D24B1EE0F8D5008BF6DF /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -43,7 +41,7 @@
 		5CD7D2501EE0F8D5008BF6DF /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		5CD7D2521EE0F8D5008BF6DF /* BaseViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		5CD7D2531EE0F8D5008BF6DF /* LoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
-		8804850E3EB37D0257FD9284 /* Pods-E-ponto.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-E-ponto.debug.xcconfig"; path = "Pods/Target Support Files/Pods-E-ponto/Pods-E-ponto.debug.xcconfig"; sourceTree = "<group>"; };
+		BB1E18BB1EE15C0200CC766B /* ActivityIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,37 +49,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4BB794C944E54A6315B38863 /* Pods_E_ponto.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		14DF74A7B1B11DFE880E1E73 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				1A9368E311FB4460BB8E24FA /* Pods_E_ponto.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		2C4073540E47A2FBDBEA04C6 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				8804850E3EB37D0257FD9284 /* Pods-E-ponto.debug.xcconfig */,
-				10AD806B5BBB0E62053FB5D7 /* Pods-E-ponto.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		5CD124941EDF9D7A00A54628 = {
 			isa = PBXGroup;
 			children = (
 				5CD1249F1EDF9D7A00A54628 /* E-ponto */,
 				5CD1249E1EDF9D7A00A54628 /* Products */,
-				2C4073540E47A2FBDBEA04C6 /* Pods */,
-				14DF74A7B1B11DFE880E1E73 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,28 +74,27 @@
 		5CD1249F1EDF9D7A00A54628 /* E-ponto */ = {
 			isa = PBXGroup;
 			children = (
-				5CD7D2471EE0F8D5008BF6DF /* Helpers */,
+				5CD124A01EDF9D7A00A54628 /* AppDelegate.swift */,
+				5CD7D2471EE0F8D5008BF6DF /* Utils */,
 				5CD7D24A1EE0F8D5008BF6DF /* Model */,
 				5CD7D24C1EE0F8D5008BF6DF /* Resources */,
 				5CD7D24E1EE0F8D5008BF6DF /* View */,
 				5CD7D2511EE0F8D5008BF6DF /* ViewModel */,
-				5CD124A01EDF9D7A00A54628 /* AppDelegate.swift */,
+				BB1E18BA1EE15BE900CC766B /* Services */,
+				BB1E18B81EE1546500CC766B /* Supporting Files */,
 				5CD124A41EDF9D7A00A54628 /* Main.storyboard */,
-				5CD124AA1EDF9D7A00A54628 /* Assets.xcassets */,
 				5CD124AC1EDF9D7A00A54628 /* LaunchScreen.storyboard */,
-				5CD124AF1EDF9D7A00A54628 /* Info.plist */,
-				5CD124A71EDF9D7A00A54628 /* E_ponto.xcdatamodeld */,
 			);
 			path = "E-ponto";
 			sourceTree = "<group>";
 		};
-		5CD7D2471EE0F8D5008BF6DF /* Helpers */ = {
+		5CD7D2471EE0F8D5008BF6DF /* Utils */ = {
 			isa = PBXGroup;
 			children = (
 				5CD7D2481EE0F8D5008BF6DF /* Error.swift */,
 				5CD7D2491EE0F8D5008BF6DF /* Extensions.swift */,
 			);
-			path = Helpers;
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		5CD7D24A1EE0F8D5008BF6DF /* Model */ = {
@@ -155,6 +132,24 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		BB1E18B81EE1546500CC766B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5CD124AA1EDF9D7A00A54628 /* Assets.xcassets */,
+				5CD124AF1EDF9D7A00A54628 /* Info.plist */,
+				5CD124A71EDF9D7A00A54628 /* E_ponto.xcdatamodeld */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BB1E18BA1EE15BE900CC766B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				BB1E18BB1EE15C0200CC766B /* ActivityIndicator.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -162,12 +157,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5CD124B21EDF9D7A00A54628 /* Build configuration list for PBXNativeTarget "E-ponto" */;
 			buildPhases = (
-				402961F7AAFE2AF9FB4FB2D6 /* [CP] Check Pods Manifest.lock */,
 				5CD124991EDF9D7A00A54628 /* Sources */,
 				5CD1249A1EDF9D7A00A54628 /* Frameworks */,
 				5CD1249B1EDF9D7A00A54628 /* Resources */,
-				BB72C3CB40E8D43D69B98B43 /* [CP] Embed Pods Frameworks */,
-				AE6F59714762511AA2FCC1C2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -227,54 +219,6 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		402961F7AAFE2AF9FB4FB2D6 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		AE6F59714762511AA2FCC1C2 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-E-ponto/Pods-E-ponto-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		BB72C3CB40E8D43D69B98B43 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-E-ponto/Pods-E-ponto-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		5CD124991EDF9D7A00A54628 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -285,6 +229,7 @@
 				5CD7D2541EE0F8D5008BF6DF /* Error.swift in Sources */,
 				5CD124A11EDF9D7A00A54628 /* AppDelegate.swift in Sources */,
 				5CD7D2561EE0F8D5008BF6DF /* User.swift in Sources */,
+				BB1E18BC1EE15C0200CC766B /* ActivityIndicator.swift in Sources */,
 				5CD7D25A1EE0F8D5008BF6DF /* BaseViewModel.swift in Sources */,
 				5CD7D2551EE0F8D5008BF6DF /* Extensions.swift in Sources */,
 				5CD7D2581EE0F8D5008BF6DF /* BaseViewController.swift in Sources */,
@@ -410,7 +355,6 @@
 		};
 		5CD124B31EDF9D7A00A54628 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8804850E3EB37D0257FD9284 /* Pods-E-ponto.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = X434P4DGS5;
@@ -424,7 +368,6 @@
 		};
 		5CD124B41EDF9D7A00A54628 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 10AD806B5BBB0E62053FB5D7 /* Pods-E-ponto.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = X434P4DGS5;
@@ -466,7 +409,8 @@
 				5CD124A81EDF9D7A00A54628 /* E_ponto.xcdatamodel */,
 			);
 			currentVersion = 5CD124A81EDF9D7A00A54628 /* E_ponto.xcdatamodel */;
-			path = E_ponto.xcdatamodeld;
+			name = E_ponto.xcdatamodeld;
+			path = ../E_ponto.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

@@ -9,47 +9,63 @@
 import UIKit
 import Firebase
 import RxSwift
+import RxCocoa
 
 class LoginViewModel {
-  
-  let validatedEmail: Observable<Bool>
-  let validatedPassword: Observable<Bool>
-  let loginEnabled: Observable<Bool>
-  let loginObservable: Observable<(FIRUser?, Error?)>
-  
-  init(input: (username: Observable<String>,
-    password: Observable<String>,
-    loginTap: Observable<Void>)) {
     
-    self.validatedEmail = input.username
-      .map { $0.characters.count >= 5 }
-      .shareReplay(1)
+    let validatedEmail: Driver<Bool>
+    let validatedPassword: Driver<Bool>
+    let loginEnabled: Driver<Bool>
     
-    self.validatedPassword = input.password
-      .map { $0.characters.count >= 4 }
-      .shareReplay(1)
+    let signedIn: Driver<User?>
     
-    self.loginEnabled = Observable.combineLatest(validatedEmail, validatedPassword ) { $0 && $1 }
-    let userAndPassword = Observable.combineLatest(input.username, input.password) {($0,$1)}
+    let signingIn: Driver<Bool>
     
-    self.loginObservable = input.loginTap.withLatestFrom(userAndPassword).flatMapLatest{ (username, password) in
-      return LoginViewModel.login(username: username, password: password).observeOn(MainScheduler.instance)
-    }
-  }
-  
-  private class func login(username: String?, password: String?) -> Observable<(FIRUser?, Error?)> {
-    return  Observable.create { observer in
-      if let username = username, let password = password {
-        FIRAuth.auth()?.signIn(withEmail: username, password: password) { user, error in
-          observer.onNext((user, error))
+    init(input: (username: Driver<String>,
+        password: Driver<String>,
+        loginTap: Driver<Void>)) {
+        
+        self.validatedEmail = input.username
+            .map { $0.characters.count >= 5 }
+        
+        self.validatedPassword = input.password
+            .map { $0.characters.count >= 4 }
+        
+        self.loginEnabled = Driver.combineLatest(validatedEmail, validatedPassword ) { $0 && $1 }
+        let userAndPassword = Driver.combineLatest(input.username, input.password) {($0,$1)}
+        
+        let signingIn = ActivityIndicator()
+        self.signingIn = signingIn.asDriver()
+        
+        signedIn = input.loginTap.withLatestFrom(userAndPassword)
+            .flatMapLatest{ (username, password) in
+            return LoginViewModel.login(username: username, password: password)
+                .trackActivity(signingIn)
+                .asDriver(onErrorJustReturn: nil)
         }
-      } else {
-        // TODO: - add error
-        observer.onNext((nil, AError.General("ok")))
-      }
-      return Disposables.create()
     }
-  }
+    
+    private class func login(username: String?, password: String?) -> Observable<User?> {
+        return  Observable.create { observer in
+            let disposeBag = Disposables.create()
+            
+            guard let username = username, let password = password else {
+                observer.onError(AError.General("Username or password null."))
+                return disposeBag
+            }
+            
+            Auth.auth().signIn(withEmail: username, password: password, completion: { (user, error) in
+                if let user = user {
+                    observer.onNext(User(email: user.email ?? "", password: ""))
+                }
+                if let er = error {
+                    observer.onError(er)
+                }
+            })
+            
+            return disposeBag
+        }
+    }
 }
 
 

@@ -39,7 +39,7 @@
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Senha" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="j4U-tD-9Sf">
                                 <rect key="frame" x="62.5" y="255" width="250" height="35"/>
@@ -49,7 +49,7 @@
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RBD-cI-Ca2">
                                 <rect key="frame" x="62.5" y="300" width="250" height="30"/>
@@ -68,11 +68,15 @@
                                 </constraints>
                                 <state key="normal" title="Entrar"/>
                             </button>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="fYM-x3-GcX">
+                                <rect key="frame" x="72" y="367" width="20" height="20"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" red="0.95686274509803915" green="0.92941176470588238" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Xn0-7l-Y8f" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1ex-M0-yGv"/>
                             <constraint firstItem="RBD-cI-Ca2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="AcF-eI-AXh"/>
+                            <constraint firstItem="zlK-2N-eUH" firstAttribute="top" secondItem="fYM-x3-GcX" secondAttribute="bottom" constant="-27" id="Aoo-Xz-tIC"/>
                             <constraint firstItem="Xn0-7l-Y8f" firstAttribute="top" secondItem="5UU-Xs-uwM" secondAttribute="bottom" constant="30" id="FjQ-Kl-NGB"/>
                             <constraint firstItem="j4U-tD-9Sf" firstAttribute="top" secondItem="Xn0-7l-Y8f" secondAttribute="bottom" constant="20" id="JCo-Sg-qTY"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ryT-hc-4Ip" secondAttribute="bottom" id="MCy-85-def"/>
@@ -82,6 +86,7 @@
                             <constraint firstItem="RBD-cI-Ca2" firstAttribute="top" secondItem="j4U-tD-9Sf" secondAttribute="bottom" constant="10" id="Xzf-gl-0FL"/>
                             <constraint firstItem="ryT-hc-4Ip" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="b2Q-JG-1Au"/>
                             <constraint firstAttribute="trailing" secondItem="ryT-hc-4Ip" secondAttribute="trailing" id="dCm-Qp-ISW"/>
+                            <constraint firstItem="zlK-2N-eUH" firstAttribute="leading" secondItem="fYM-x3-GcX" secondAttribute="trailing" constant="-30" id="lOP-9k-7Gr"/>
                             <constraint firstItem="5UU-Xs-uwM" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="uYb-9G-KUg"/>
                             <constraint firstItem="j4U-tD-9Sf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wc6-GU-PrD"/>
                             <constraint firstItem="ryT-hc-4Ip" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="zaG-aV-vMF"/>
@@ -91,6 +96,7 @@
                         <outlet property="loginButton" destination="zlK-2N-eUH" id="pVh-lE-le1"/>
                         <outlet property="passwordTextField" destination="j4U-tD-9Sf" id="n5I-IZ-zKB"/>
                         <outlet property="requestButton" destination="RBD-cI-Ca2" id="F26-uP-jP9"/>
+                        <outlet property="signingUpOulet" destination="fYM-x3-GcX" id="nfA-Eh-9IZ"/>
                         <outlet property="usernameTextField" destination="Xn0-7l-Y8f" id="fCt-QG-ahK"/>
                     </connections>
                 </viewController>

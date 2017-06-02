@@ -1,22 +1,22 @@
 PODS:
-  - Firebase/Auth (3.17.0):
+  - Firebase/Auth (4.0.0):
     - Firebase/Core
-    - FirebaseAuth (= 3.1.1)
-  - Firebase/Core (3.17.0):
-    - FirebaseAnalytics (= 3.9.0)
-    - FirebaseCore (= 3.6.0)
-  - FirebaseAnalytics (3.9.0):
-    - FirebaseCore (~> 3.6)
-    - FirebaseInstanceID (~> 1.0)
+    - FirebaseAuth (= 4.0.0)
+  - Firebase/Core (4.0.0):
+    - FirebaseAnalytics (= 4.0.0)
+    - FirebaseCore (= 4.0.0)
+  - FirebaseAnalytics (4.0.0):
+    - FirebaseCore (~> 4.0)
+    - FirebaseInstanceID (~> 2.0)
     - GoogleToolboxForMac/NSData+zlib (~> 2.1)
-  - FirebaseAuth (3.1.1):
-    - FirebaseAnalytics (~> 3.7)
+  - FirebaseAuth (4.0.0):
+    - FirebaseAnalytics (~> 4.0)
     - GoogleToolboxForMac/NSDictionary+URLArguments (~> 2.1)
     - GTMSessionFetcher/Core (~> 1.1)
-  - FirebaseCore (3.6.0):
+  - FirebaseCore (4.0.0):
     - GoogleToolboxForMac/NSData+zlib (~> 2.1)
-  - FirebaseInstanceID (1.0.10):
-    - FirebaseCore (~> 3.6)
+  - FirebaseInstanceID (2.0.0):
+    - FirebaseCore (~> 4.0)
   - GoogleToolboxForMac/DebugUtils (2.1.1):
     - GoogleToolboxForMac/Defines (= 2.1.1)
   - GoogleToolboxForMac/Defines (2.1.1)
@@ -27,31 +27,31 @@ PODS:
     - GoogleToolboxForMac/Defines (= 2.1.1)
     - GoogleToolboxForMac/NSString+URLArguments (= 2.1.1)
   - GoogleToolboxForMac/NSString+URLArguments (2.1.1)
-  - GTMSessionFetcher/Core (1.1.9)
-  - IQKeyboardManagerSwift (4.0.9)
-  - RxCocoa (3.4.1):
+  - GTMSessionFetcher/Core (1.1.10)
+  - IQKeyboardManagerSwift (4.0.10)
+  - RxCocoa (3.5.0):
     - RxSwift (~> 3.4)
-  - RxSwift (3.4.1)
+  - RxSwift (3.5.0)
 
 DEPENDENCIES:
   - Firebase/Auth
   - Firebase/Core
   - IQKeyboardManagerSwift
-  - RxCocoa (~> 3.0)
-  - RxSwift (~> 3.0)
+  - RxCocoa
+  - RxSwift
 
 SPEC CHECKSUMS:
-  Firebase: 4b66b5b59c43edac745b87f0c87e42cdd0279c13
-  FirebaseAnalytics: e5fe8486efc01bec33f6bf82e2fa9fce4b124052
-  FirebaseAuth: cc8a1824170adbd351edb7f994490a3fb5c18be6
-  FirebaseCore: 9691ee2ade70c098d7cf92440f4303f16d83ca75
-  FirebaseInstanceID: b9eedd6846fb5e1f0f7279e1deaa7a7e4cf8392e
+  Firebase: 284eea779b73fdff309791817da7c68bff8dd572
+  FirebaseAnalytics: 6f08e746f7d66f5452931bc2e822b5df9c66b64a
+  FirebaseAuth: ebb6abcbabae00fc47446d690c19ce68d8484fde
+  FirebaseCore: 85ad466044c2f013cdb167f85d426d15b128114a
+  FirebaseInstanceID: 9fbf536668f4d3f0880e7438456dabd1376e294b
   GoogleToolboxForMac: 8e329f1b599f2512c6b10676d45736bcc2cbbeb0
-  GTMSessionFetcher: 5c046c76a1f859bc9c187e918f18e4fc7bb57b5e
-  IQKeyboardManagerSwift: 2eefe6c429b86aa08bfbc1b5c891164d754adf91
-  RxCocoa: a8a5f1d061d0043e28f56976829f31ce63e8eb09
-  RxSwift: 656f8fbeca5bc372121a72d9ebdd3cd3bc0ffade
+  GTMSessionFetcher: 30d874b96d0d76028f61fbd122801e3f030d47db
+  IQKeyboardManagerSwift: 75ba21a23794a1e6b6fe6d9a267ea17f80e06771
+  RxCocoa: a0a09f45d0e5b48ecb6a4a7b4b4c89c88d3f633f
+  RxSwift: 18ee9d78b45edb3b0b7e79916b47a116e6dbc842
 
-PODFILE CHECKSUM: 9a5d6d2fb65ff7a53060fa5c23e9da1961f89383
+PODFILE CHECKSUM: 75d796092dbaf6f075904653c50a94ec40a4a847
 
 COCOAPODS: 1.2.1

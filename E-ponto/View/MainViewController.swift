@@ -13,7 +13,6 @@ class MainViewController: UIViewController {
     @IBOutlet var leftContraings: NSLayoutConstraint!
     @IBOutlet var leftMainMenu: UIView!
     
-    
     //vars
     var mainMenuActive = false
 
